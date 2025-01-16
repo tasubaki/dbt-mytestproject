@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bank_transactions
+    database: defaultdb
+    schema: public
+    tables:
+      - name: stocks

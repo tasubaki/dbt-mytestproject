@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stocks_data
+    columns:
+      - name: high
+        tests:
+          - expression_is_true:
+              expression: "high / open <= 1.07"
+      - name: low
+        tests:
+          - expression_is_true:
+              expression: "low / open >= 0.93"
